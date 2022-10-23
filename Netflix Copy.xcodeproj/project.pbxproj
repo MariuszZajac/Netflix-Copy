@@ -16,6 +16,7 @@
 		871E7AEC29053D67005CED45 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AEB29053D67005CED45 /* UpcomingViewController.swift */; };
 		871E7AEE29053DA0005CED45 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AED29053DA0005CED45 /* SearchViewController.swift */; };
 		871E7AF029053DE0005CED45 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AEF29053DE0005CED45 /* DownloadsViewController.swift */; };
+		871E7AF829055143005CED45 /* CollectionVievTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AF729055143005CED45 /* CollectionVievTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		871E7AEB29053D67005CED45 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		871E7AED29053DA0005CED45 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		871E7AEF29053DE0005CED45 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		871E7AF729055143005CED45 /* CollectionVievTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVievTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,11 @@
 		871E7AD3290531A9005CED45 /* Netflix Copy */ = {
 			isa = PBXGroup;
 			children = (
+				871E7AF6290550F3005CED45 /* Managers */,
+				871E7AF5290550E1005CED45 /* Resources */,
+				871E7AF4290550A4005CED45 /* Models */,
 				871E7AF129055042005CED45 /* Views */,
+				871E7AF329055089005CED45 /* ViewModels */,
 				871E7AE829053CAF005CED45 /* Controllers */,
 				871E7AD8290531A9005CED45 /* MainTabBarViewController.swift */,
 				871E7AD4290531A9005CED45 /* AppDelegate.swift */,
@@ -88,8 +94,37 @@
 		871E7AF129055042005CED45 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				871E7AF729055143005CED45 /* CollectionVievTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		871E7AF329055089005CED45 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		871E7AF4290550A4005CED45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		871E7AF5290550E1005CED45 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		871E7AF6290550F3005CED45 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +204,7 @@
 				871E7AD7290531A9005CED45 /* SceneDelegate.swift in Sources */,
 				871E7AEC29053D67005CED45 /* UpcomingViewController.swift in Sources */,
 				871E7AEA29053D0D005CED45 /* HomeViewController.swift in Sources */,
+				871E7AF829055143005CED45 /* CollectionVievTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
