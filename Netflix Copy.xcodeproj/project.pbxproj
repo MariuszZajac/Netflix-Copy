@@ -19,6 +19,7 @@
 		871E7AF829055143005CED45 /* CollectionVievTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AF729055143005CED45 /* CollectionVievTableViewCell.swift */; };
 		871E7AFA29055A67005CED45 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AF929055A67005CED45 /* HeroHeaderUIView.swift */; };
 		871E7AFC29059083005CED45 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AFB29059083005CED45 /* APICaller.swift */; };
+		871E7AFE2905953D005CED45 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AFD2905953D005CED45 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		871E7AF729055143005CED45 /* CollectionVievTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVievTableViewCell.swift; sourceTree = "<group>"; };
 		871E7AF929055A67005CED45 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		871E7AFB29059083005CED45 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		871E7AFD2905953D005CED45 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		871E7AF4290550A4005CED45 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				871E7AFD2905953D005CED45 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				871E7AD7290531A9005CED45 /* SceneDelegate.swift in Sources */,
 				871E7AEC29053D67005CED45 /* UpcomingViewController.swift in Sources */,
 				871E7AEA29053D0D005CED45 /* HomeViewController.swift in Sources */,
+				871E7AFE2905953D005CED45 /* Movie.swift in Sources */,
 				871E7AF829055143005CED45 /* CollectionVievTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
