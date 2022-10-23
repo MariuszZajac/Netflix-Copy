@@ -17,6 +17,7 @@
 		871E7AEE29053DA0005CED45 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AED29053DA0005CED45 /* SearchViewController.swift */; };
 		871E7AF029053DE0005CED45 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AEF29053DE0005CED45 /* DownloadsViewController.swift */; };
 		871E7AF829055143005CED45 /* CollectionVievTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AF729055143005CED45 /* CollectionVievTableViewCell.swift */; };
+		871E7AFA29055A67005CED45 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AF929055A67005CED45 /* HeroHeaderUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		871E7AED29053DA0005CED45 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		871E7AEF29053DE0005CED45 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		871E7AF729055143005CED45 /* CollectionVievTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVievTableViewCell.swift; sourceTree = "<group>"; };
+		871E7AF929055A67005CED45 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				871E7AF729055143005CED45 /* CollectionVievTableViewCell.swift */,
+				871E7AF929055A67005CED45 /* HeroHeaderUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				871E7AEE29053DA0005CED45 /* SearchViewController.swift in Sources */,
 				871E7AD9290531A9005CED45 /* MainTabBarViewController.swift in Sources */,
 				871E7AF029053DE0005CED45 /* DownloadsViewController.swift in Sources */,
+				871E7AFA29055A67005CED45 /* HeroHeaderUIView.swift in Sources */,
 				871E7AD5290531A9005CED45 /* AppDelegate.swift in Sources */,
 				871E7AD7290531A9005CED45 /* SceneDelegate.swift in Sources */,
 				871E7AEC29053D67005CED45 /* UpcomingViewController.swift in Sources */,
