@@ -20,6 +20,7 @@
 		871E7AFA29055A67005CED45 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AF929055A67005CED45 /* HeroHeaderUIView.swift */; };
 		871E7AFC29059083005CED45 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AFB29059083005CED45 /* APICaller.swift */; };
 		871E7AFE2905953D005CED45 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871E7AFD2905953D005CED45 /* Movie.swift */; };
+		8745B4B5290658C400E18259 /* Tv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745B4B4290658C400E18259 /* Tv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		871E7AF929055A67005CED45 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		871E7AFB29059083005CED45 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		871E7AFD2905953D005CED45 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		8745B4B4290658C400E18259 /* Tv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				871E7AFD2905953D005CED45 /* Movie.swift */,
+				8745B4B4290658C400E18259 /* Tv.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				871E7AF029053DE0005CED45 /* DownloadsViewController.swift in Sources */,
 				871E7AFC29059083005CED45 /* APICaller.swift in Sources */,
 				871E7AFA29055A67005CED45 /* HeroHeaderUIView.swift in Sources */,
+				8745B4B5290658C400E18259 /* Tv.swift in Sources */,
 				871E7AD5290531A9005CED45 /* AppDelegate.swift in Sources */,
 				871E7AD7290531A9005CED45 /* SceneDelegate.swift in Sources */,
 				871E7AEC29053D67005CED45 /* UpcomingViewController.swift in Sources */,
