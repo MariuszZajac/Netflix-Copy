@@ -33,6 +33,7 @@ class TitleTableViewCell: UITableViewCell {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.clipsToBounds = true
         return imageView
     }()
     
@@ -49,8 +50,8 @@ class TitleTableViewCell: UITableViewCell {
     private func applyConstrains(){
         let titlePosterImageViewConstrains = [
             titlePosterImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            titlePosterImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15),
-            titlePosterImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
+            titlePosterImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            titlePosterImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
             titlePosterImageView.widthAnchor.constraint(equalToConstant: 100)
         ]
         
