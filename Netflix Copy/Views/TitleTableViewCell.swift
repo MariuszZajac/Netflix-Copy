@@ -13,7 +13,10 @@ class TitleTableViewCell: UITableViewCell {
     
     private let playTitleButton: UIButton = {
         let button = UIButton ()
+        let image = UIImage(systemName: "play.circle", withConfiguration: UIImage.SymbolConfiguration(pointSize: 35))
+        button.setImage(image, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.tintColor = .white
         return button
     }()
     
@@ -40,7 +43,7 @@ class TitleTableViewCell: UITableViewCell {
         contentView.addSubview(titleLabel)
         contentView.addSubview(playTitleButton)
         
-        applayConstrains()
+        applyConstrains()
     }
     
     private func applyConstrains(){
@@ -50,13 +53,26 @@ class TitleTableViewCell: UITableViewCell {
             titlePosterImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
             titlePosterImageView.widthAnchor.constraint(equalToConstant: 100)
         ]
+        
+        let titleLabelConstrains = [
+            titleLabel.leadingAnchor.constraint(equalTo: titlePosterImageView.trailingAnchor, constant: 20),
+            titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)]
+        
+        
+        let playTitleButtonConstrains = [
+            playTitleButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            playTitleButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
+        ]
         NSLayoutConstraint.activate(titlePosterImageViewConstrains)
+        NSLayoutConstraint.activate(titleLabelConstrains)
+        NSLayoutConstraint.activate(playTitleButtonConstrains)
     }
     
     public func configure(with model: TitleViewModel) {
-        guard let url = URL(string: model.posterURL) else {
-            return
-        }
+               
+        guard let url = URL(string: "https://image.tmdb.org/t/p/w500/\(model.posterURL)") else {
+            return}
+        
         titlePosterImageView.sd_setImage(with: url, completed: nil)
         titleLabel.text = model.titleName
     }
