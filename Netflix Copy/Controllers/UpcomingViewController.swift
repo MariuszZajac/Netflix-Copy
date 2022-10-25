@@ -59,7 +59,7 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = /*titles[indexPath.row].//orginal english title ??*/ titles[indexPath.row].original_title ?? "unknown"
+        cell.textLabel?.text = titles[indexPath.row].original_name ?? titles[indexPath.row].original_title ?? "unknown"
         return cell
     }
 }

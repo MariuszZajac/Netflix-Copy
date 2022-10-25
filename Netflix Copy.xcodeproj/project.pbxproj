@@ -23,6 +23,8 @@
 		8745B4B72906D30400E18259 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745B4B62906D30400E18259 /* TitleCollectionViewCell.swift */; };
 		8745B4BA2907016800E18259 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8745B4B92907016800E18259 /* SDWebImage */; };
 		8745B4BC2907016800E18259 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8745B4BB2907016800E18259 /* SDWebImageMapKit */; };
+		8745B4BE2907A94600E18259 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745B4BD2907A94600E18259 /* TitleTableViewCell.swift */; };
+		8745B4C02907AE2600E18259 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745B4BF2907AE2600E18259 /* TitleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		871E7AFB29059083005CED45 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		871E7AFD2905953D005CED45 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		8745B4B62906D30400E18259 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		8745B4BD2907A94600E18259 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		8745B4BF2907AE2600E18259 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				871E7AF729055143005CED45 /* CollectionVievTableViewCell.swift */,
 				871E7AF929055A67005CED45 /* HeroHeaderUIView.swift */,
 				8745B4B62906D30400E18259 /* TitleCollectionViewCell.swift */,
+				8745B4BD2907A94600E18259 /* TitleTableViewCell.swift */,
+				8745B4BF2907AE2600E18259 /* TitleViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +228,7 @@
 			files = (
 				871E7AEE29053DA0005CED45 /* SearchViewController.swift in Sources */,
 				871E7AD9290531A9005CED45 /* MainTabBarViewController.swift in Sources */,
+				8745B4BE2907A94600E18259 /* TitleTableViewCell.swift in Sources */,
 				871E7AF029053DE0005CED45 /* DownloadsViewController.swift in Sources */,
 				871E7AFC29059083005CED45 /* APICaller.swift in Sources */,
 				871E7AFA29055A67005CED45 /* HeroHeaderUIView.swift in Sources */,
@@ -230,6 +237,7 @@
 				871E7AEC29053D67005CED45 /* UpcomingViewController.swift in Sources */,
 				871E7AEA29053D0D005CED45 /* HomeViewController.swift in Sources */,
 				8745B4B72906D30400E18259 /* TitleCollectionViewCell.swift in Sources */,
+				8745B4C02907AE2600E18259 /* TitleViewModel.swift in Sources */,
 				871E7AFE2905953D005CED45 /* Title.swift in Sources */,
 				871E7AF829055143005CED45 /* CollectionVievTableViewCell.swift in Sources */,
 			);
