@@ -57,7 +57,7 @@ class HomeViewController: UIViewController {
         super.viewDidLayoutSubviews()
         homeFeedTable.frame = view.bounds
         
-        
+        navigationController?.pushViewController(TitlePreviewViewController(), animated: true)
         
     }
 

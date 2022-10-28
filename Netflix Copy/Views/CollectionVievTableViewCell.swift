@@ -7,9 +7,17 @@
 
 import UIKit
 
+protocol CollectionVievTableViewCellDelegate: AnyObject {
+    func collectionVievTableViewCellDidTapCell(_ cell: CollectionVievTableViewCell, viewModel: TitlePreviewViewModel)
+}
+
+
 class CollectionVievTableViewCell: UITableViewCell {
     
     static let identifier = "CollectionVievTableViewCell"
+    
+    weak var delegate: CollectionVievTableViewCellDelegate?
+    
     private var titles: [Title] = [Title] ()
     
     private let collectionViev: UICollectionView = {
