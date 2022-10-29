@@ -24,16 +24,34 @@ class DownloadsViewController: UIViewController {
 
         view.backgroundColor = .systemBackground
         title = "Downloads"
+        view.addSubview(downloadTable)
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
         downloadTable.delegate = self
         downloadTable.dataSource = self
-        
+        fetchLocalStorageForDownload()
         
     }
+    private func fetchLocalStorageForDownload() {
     
-
-
+        DataPersistanceManager.shared.fetchingTitlesFromDataBase{[weak self] result in
+            switch result {
+            case .success(let titles):
+                self?.titles = titles
+                DispatchQueue.main.async {
+                    self?.downloadTable.reloadData()
+                }
+                
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        downloadTable.frame = view.bounds
+    }
+    
 }
 extension DownloadsViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -52,5 +70,24 @@ extension DownloadsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .delete:
+            
+            DataPersistanceManager.shared.deleteTitleWith(model: titles[indexPath.row]) { [weak self] result in
+                switch result {
+                case .success():
+                    print("Deleting succes")
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+                self?.titles.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
+       
+        default:
+            break;
+        }
     }
 }
