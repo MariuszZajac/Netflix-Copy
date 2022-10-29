@@ -54,7 +54,7 @@ class CollectionVievTableViewCell: UITableViewCell {
         }
     }
     private func downloadTitleAt(indexPath: IndexPath) {
-        print("Downloading \(titles[indexPath.row].original_title)")
+        print("Downloading \(String(describing: titles[indexPath.row].original_title))")
     }
     
     
