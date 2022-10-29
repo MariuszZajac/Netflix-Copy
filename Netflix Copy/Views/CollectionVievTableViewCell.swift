@@ -77,11 +77,15 @@ extension CollectionVievTableViewCell: UICollectionViewDelegate, UICollectionVie
         guard let titleName = title.original_title ?? title.original_name else {
             return
         }
-        APICaller.shared.getMovie(with: titleName + "trailer") {
-            result in
+        APICaller.shared.getMovie(with: titleName + "trailer") { [weak self] result in
             switch result {
             case .success(let VideoElement):
-                print(VideoElement.id)
+                
+                let title = self?.titles[indexPath.row]
+                guard let titleOverview = title?.overview else {return}
+                guard let strongSelf = self else {return}
+                let viewModel = TitlePreviewViewModel(title: titleName, youtubeView: VideoElement, titleOverview: titleOverview)
+                self?.delegate?.collectionVievTableViewCellDidTapCell(strongSelf, viewModel: viewModel)
                 
             case .failure(let error):
                 print(error.localizedDescription)
