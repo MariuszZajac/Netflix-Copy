@@ -1,7 +1,5 @@
 # Netflix-Copy
-Lerning how to copy netflix follow with tutorial its my first that big app. 
-
-![Simulator Screen Shot - iPhone 14 Pro Max - 2022-11-01 at 08 56 27](https://user-images.githubusercontent.com/93003863/199185871-c9ca6d33-dc41-401a-b737-5746140486e3.png)
+Lerning how to copy netflix follow with tutorial.
 ![Simulator Screen Shot - iPhone 14 Pro Max - 2022-11-01 at 08 56 39](https://user-images.githubusercontent.com/93003863/199185880-19249f05-bfdc-4187-ba74-f3aa0a6de19d.png)
 ![Simulator Screen Shot - iPhone 14 Pro Max - 2022-11-01 at 08 56 48](https://user-images.githubusercontent.com/93003863/199185904-a8252e20-9b75-495d-8fcc-f9682965b73e.png)
 ![Simulator Screen Shot - iPhone 14 Pro Max - 2022-11-01 at 08 56 57](https://user-images.githubusercontent.com/93003863/199185928-faaba64e-b15b-45d6-b27e-5f0f2a0ea569.png)
